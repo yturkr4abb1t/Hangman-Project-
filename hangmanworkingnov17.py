@@ -6,18 +6,7 @@ def speak(text):
     engine = pyttsx3.init()
     engine.say(text)
     engine.runAndWait()
-'''
-this is the code I used as an example from the linked articles
-def get_random_word_from_wordlist():
-    wordlist = []
- 
-    with open("hangman_wordlist.txt", 'r') as file:
-        wordlist = file.read().split("\n")
- 
-    word = random.choice(wordlist)
-    return word
-below is my version of this code without the seperate word list file
-'''
+
 # function to generate a random word 
 def wordlist():
     words = ["apple", "banana", "orange", "grape", 
@@ -74,9 +63,10 @@ def hangman():
                 speak("Good Guess!" + guess)
                 print("Good Guess!" + guess)
                 
-                
-                
                 guessed_letters.append(guess) #append will add the letter to a list if not already present 
+                
+                word_display = display_word(chosen_word, guessed_letters)
+                print("Word:", word_display)
                 
             # statement to reply for incorrect guess 
             else:
