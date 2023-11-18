@@ -72,8 +72,7 @@ def hangman():
             else:
                 speak( guess + " that letter is not in the word")
                 attempts -= 1
-        else:
-            speak("that letter is not in the word")
+        
                  
         if set(guessed_letters) == set(chosen_word):
             speak(f"Congratulations! You guessed the word: {chosen_word}")
