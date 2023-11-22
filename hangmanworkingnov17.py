@@ -13,9 +13,9 @@ def wordlist():
              "kiwi", "mango", "pear", "pineapple", 
              "strawberry", "watermelon", 
              "spring", "summer", "fall", "winter", 
-             "chocolate", "gummy bears", "lollipop", 
-             "caramel", "jellybean","licorice", "peppermint", 
-             "toffee", "taffy", "gumdrop"]
+             "chocolate", "coding", "lollipop", 
+             "caramel", "jellybean","bear", "peppermint", 
+             "toffee", "taffy", "holiday"]
 
     return random.choice(words)
 
@@ -65,6 +65,7 @@ def hangman():
                 
                 guessed_letters.append(guess) #append will add the letter to a list if not already present 
                 
+                #this will display the word as you guess
                 word_display = display_word(chosen_word, guessed_letters)
                 print("Word:", word_display)
                 
@@ -72,7 +73,7 @@ def hangman():
             else:
                 speak( guess + " that letter is not in the word")
                 attempts -= 1
-        
+
                  
         if set(guessed_letters) == set(chosen_word):
             speak(f"Congratulations! You guessed the word: {chosen_word}")
@@ -82,6 +83,7 @@ def hangman():
 
 if __name__ == "__main__":
     hangman()
+
 
                 
             
