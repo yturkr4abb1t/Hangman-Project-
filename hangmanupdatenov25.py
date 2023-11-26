@@ -11,11 +11,10 @@ def speak(text):
 # function to generate a random word 
 def wordlist():
     words = ["apple", "banana", "orange", "grape", 
-             "kiwi", "mango", "pear", "pineapple", 
-             "strawberry", "watermelon", 
+             "kiwi", "mango", "pear", 
              "spring", "summer", "fall", "winter", 
-             "chocolate", "coding", "lollipop", 
-             "caramel", "jellybean","bear", "peppermint", 
+             "coding", "candy", 
+             "caramel","bear", "soap", "ghost",
              "toffee", "taffy", "holiday"]
 
     return random.choice(words)
