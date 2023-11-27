@@ -149,7 +149,10 @@ def hangman():
     
         if not playagain():
             break
-            
+
+# this code below is used to check if the script is the main point and if true runs the hangman code 
+# name is used to set the script's name and main is to indicate its the main body of the code
+# so if true it will run the hangman body of code (the entire code)
 
 if __name__ == "__main__":
     hangman()
