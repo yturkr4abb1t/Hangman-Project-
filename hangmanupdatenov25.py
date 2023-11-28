@@ -151,7 +151,7 @@ def hangman():
             break
 
 # this code below is used to check if the script is the main point and if true runs the hangman code 
-# name is used to set the script's name and main is to indicate its the main body of the code
+# name (special built in varibale) is used to set the script's name and main is to indicate its the main body of the code
 # so if true it will run the hangman body of code (the entire code)
 # allows you to separate the script's executable code from its reusable components.
 
